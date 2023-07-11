@@ -165,8 +165,8 @@ ul {
     width: 2.5rem;
 }
 
-.summary .btn {
-    background-color: var(--dark-gray-blue);
+.summary a.btn {
+    background: linear-gradient(var(--dark-gray-blue), var(--dark-gray-blue));
     color: #fff;
     text-decoration: none;
     font-size: 2rem;
@@ -178,7 +178,27 @@ ul {
     padding-top: 1.7rem;
     padding-bottom: 1.6rem;
     border-radius: 5rem;
+    position: relative;
+    z-index: 1;
 }
+
+.summary .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 5rem;
+    transition: all 1000ms;
+    z-index: -1;
+}
+
+.summary a.btn:hover::after {
+    opacity: 1;
+} 
 
 .summary .rating {
     font-weight: 800;
