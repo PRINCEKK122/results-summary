@@ -180,3 +180,14 @@ ul {
     border-radius: 5rem;
 }
 
+.summary .rating {
+    font-weight: 800;
+}
+
+.summary .rating .score {
+    color: var(--dark-gray-blue);
+}
+
+.summary .rating span {
+    color: rgba(0, 0, 0, 0.4);
+}
