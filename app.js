@@ -44,13 +44,11 @@ xhr.onreadystatechange = function() {
     if (this.status === 200 && this.readyState === 4) {
         const data = JSON.parse(this.response);
 
-        data.forEach(item => {
-            createListItem("li", item)
-        });
+        data.forEach(item => createListItem("li", item));
 
         const average = scores.reduce((accumulator, currentVal) => accumulator + currentVal) / scores.length;
         scoresAverage.textContent = Math.floor(average);
     }
-}
+};
 
 xhr.send();
