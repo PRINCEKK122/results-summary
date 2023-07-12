@@ -52,25 +52,6 @@ ul {
     color: var(--light-white);
 }
 
-@media only screen and (min-width: 1440px) {
-    body {
-        background-color: var(--pale-blue);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        height: 100svh;
-    }
-
-    main {
-        display: flex;
-        width: 73.6rem;
-        background-color: #fff;
-        border-radius: 10%;
-    }
-}
-
 /* results */
 .results {
     background: linear-gradient(to bottom left, var(--light-slate-blue), var(--light-royal-blue));
@@ -80,15 +61,8 @@ ul {
     align-items: center;
     gap: 3rem;
     padding: 3rem 6rem;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
-
-@media only screen and (min-width: 1440px) {
-    .results {
-        width: 50%;
-        border-radius: 10%;
-    }
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .results h1 {
@@ -123,25 +97,9 @@ ul {
     margin-bottom: 2rem;
 }
 
-@media only screen and (min-width: 1440px) {
-    .results .scores {
-        padding: 5rem 7rem;
-    }
-
-    .results .remarks {
-        margin-top: 2rem;
-    }
-}
-
 /* summary */
 .summary {
     padding: 3rem;
-}
-
-@media only screen and (min-width: 1440px) {
-    .summary {
-        width: 50%;
-    }
 }
 
 .summary h3 {
@@ -243,12 +201,6 @@ ul {
     opacity: 1;
 }
 
-@media only screen and (min-width: 1440px) {
-    .summary .btn {
-        margin-top: 5rem;
-    }
-}
-
 .summary .rating {
     font-weight: 800;
 }
@@ -269,4 +221,44 @@ ul {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+/* Media Query */
+@media only screen and (min-width: 1440px) {
+    body {
+        background-color: var(--pale-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        height: 100svh;
+    }
+
+    main {
+        display: flex;
+        width: 73.6rem;
+        background-color: #fff;
+        border-radius: 2rem;
+    }
+
+    .results {
+        width: 50%;
+        border-radius: 10%;
+    }
+
+    .results .scores {
+        padding: 5rem 7rem;
+    }
+
+    .results .remarks {
+        margin-top: 2rem;
+    }
+
+    .summary {
+        width: 50%;
+    }
+
+    .summary .btn {
+        margin-top: 5rem;
+    }
 }
