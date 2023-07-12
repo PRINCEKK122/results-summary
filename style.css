@@ -30,6 +30,11 @@
     padding: 0;
 }
 
+main {
+    max-width: 73.6rem;
+    margin: 0 auto;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -37,6 +42,7 @@ html {
 body {
     font-family: "Hanken Grotesk", sans-serif;
     font-size: 1.8rem;
+    background-color: var(--pale-blue);
 }
 
 ul {
@@ -100,6 +106,7 @@ ul {
 /* summary */
 .summary {
     padding: 3rem;
+    background-color: #fff;
 }
 
 .summary h3 {
@@ -236,14 +243,13 @@ ul {
 
     main {
         display: flex;
-        width: 73.6rem;
         background-color: #fff;
-        border-radius: 2rem;
+        border-radius: 4rem;
     }
 
     .results {
         width: 50%;
-        border-radius: 10%;
+        border-radius: 4rem;
     }
 
     .results .scores {
@@ -256,6 +262,7 @@ ul {
 
     .summary {
         width: 50%;
+        border-radius: 4rem;
     }
 
     .summary .btn {
